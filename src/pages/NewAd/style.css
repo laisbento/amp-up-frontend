@@ -1,0 +1,45 @@
+.new-ad-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-ad-container .content {
+    width: 100%;
+    padding: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-ad-container .content section {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -200px;
+}
+
+.new-ad-container .content section h1 {
+    margin: 4px 0 0;
+    font-size: 32px;
+}
+
+.new-ad-container .content section p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+
+.new-ad-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.new-ad-container .content form input,
+.new-ad-container .content form textarea {
+    margin-top: 8px;
+}

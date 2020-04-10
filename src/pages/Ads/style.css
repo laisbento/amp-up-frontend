@@ -1,0 +1,104 @@
+.ads-container{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+
+}
+
+.ads-container .last-ads-container {
+    display: flex;
+}
+
+.ads-container .last-ads-container img{
+    margin-top: 50px;
+    margin-left: 10px;
+    max-width: 100%;
+    max-height: 110px;
+}
+
+.ads-container .last-ads-container h1 {
+    margin-left: 20px;
+}
+
+.ads-container header {
+    display: flex;
+    align-items: center;
+}
+
+.ads-container header span {
+    margin-top: auto;
+    margin-left: 24px;
+}
+
+.ads-container header img {
+    height: 134px;
+}
+
+.ads-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+
+.ads-container header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.ads-container header button:hover {
+    border-color: #9999;
+}
+
+.ads-container h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
+.ads-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.ads-container ul li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.ads-container ul li button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+    background: none;
+}
+
+.ads-container ul li button:hover {
+    opacity: 0.8;
+}
+
+.ads-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.ads-container ul li p + strong {
+    margin-top: 32px;
+}
+
+.ads-container ul li p {
+    color: #737380;
+    line-height: 10px;
+    font-size: 16px;
+}
