@@ -14,7 +14,7 @@ export default function Ads() {
         api.get('ads').then(response => {
             setAds(response.data)
         });
-    });
+    }, []);
 
     return (
         <div className="ads-container">
