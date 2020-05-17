@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
+import { FaWhatsapp, FaHome } from 'react-icons/fa';
 
 import api from '../../services/api';
 import './style.css';
 import logoImg from '../../assets/logo.png';
-import guyImg from '../../assets/guy.png'
 
 export default function Ads() {
     const [ads, setAds] = useState([]);
@@ -22,13 +21,13 @@ export default function Ads() {
                 <img src={logoImg} alt="AmpUp" />
 
                 <Link className="button" to="/logon">
-                    Logon
+                    Login
                 </Link>
             </header>
 
             <div className="last-ads-container">
-                <img src={guyImg} alt="Everyone" />
-                <h1>Últimos anúncios</h1>
+                <FaHome size={90} />
+                <h1>Imóveis anunciados</h1>
             </div>
             <ul>
                 {ads.map(ad => (
@@ -46,7 +45,7 @@ export default function Ads() {
                         <p>{ad.bairro + ' - ' + ad.city + ', ' + ad.uf}</p>
 
                         <button type="button" onClick={() => window.open('https://api.whatsapp.com/send?phone=+55' + ad.whatsapp +
-                            '+&text=Oi, ' + ad.name + '! Tudo bem? Te vi no AmpUp! Estou interessado/a em '
+                            '+&text=Oi, ' + ad.name + '! Tudo bem? Te vi no AmpUp! Estou interessado/a no seu imóvel '
                             + ad.title + '. Podemos conversar?')}>
                             <FaWhatsapp size={30} color="#a8a8b3" />
                         </button>

@@ -6,7 +6,7 @@ import api from '../../services/api';
 
 import './style.css';
 import logoImg from '../../assets/logo.png'
-import everyoneImg from '../../assets/everyone.png'
+import rentImg from '../../assets/index-rent.png'
 
 export default function Logon() {
     const [id, setId] = useState('');
@@ -33,7 +33,7 @@ export default function Logon() {
             <div className="form-container">
                 <section className="form">
                     <form onSubmit={handleLogin}>
-                        <h1>Faça seu logon</h1>
+                        <h1>Faça seu login</h1>
 
                         <input
                             placeholder="Seu ID"
@@ -44,11 +44,11 @@ export default function Logon() {
 
                         <Link className="back-link" to="/register">
                             <FiLogIn size={20} color="#E02041" />
-                        Não tenho cadastro
+                        Cadastre-se
                     </Link>
                     </form>
                 </section>
-                <img src={everyoneImg} alt="Everyone" />
+                <img src={rentImg} alt="Rent" />
             </div>
         </div>
 

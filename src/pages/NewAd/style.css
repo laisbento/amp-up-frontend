@@ -40,6 +40,7 @@
 }
 
 .new-ad-container .content form input,
-.new-ad-container .content form textarea {
+.new-ad-container .content form textarea,
+.new-ad-container .content form select {
     margin-top: 8px;
 }

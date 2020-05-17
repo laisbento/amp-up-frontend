@@ -12,6 +12,7 @@ export default function NewAd() {
     const [title, setTile] = useState('');
     const [description, setDescription] = useState('');
     const [value, setValue] = useState('');
+    const [tipoNegocio, setTipoNegocio] = useState('Aluguel');
 
     const history = useHistory();
 
@@ -23,13 +24,14 @@ export default function NewAd() {
         const data = {
             title,
             description,
-            value
+            value,
+            tipoNegocio
         };
 
         try {
             await api.post('ads', data, {
                 headers: {
-                    Authorization: userId, 
+                    Authorization: userId,
                 }
             });
             history.push('/profile');
@@ -47,7 +49,7 @@ export default function NewAd() {
 
                     <h1>Cadastrar novo anúncio</h1>
 
-                    <p>Descreva o anúncio detalhadamente para encontrar um comprador o mais rápido possível!</p>
+                    <p>Descreva o imóvel detalhadamente para encontrar um comprador ou inquilino o mais rápido possível!</p>
 
                     <Link className="back-link" to="/profile">
                         <FiArrowLeft size={16} color="#E02041" />
@@ -62,10 +64,17 @@ export default function NewAd() {
                         onChange={e => setTile(e.target.value)}
                     />
                     <textarea
-                        placeholder="Descrição"
+                        placeholder="Descrição do imóvel"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
+                    <select
+                        value={tipoNegocio}
+                        onChange={e => setTipoNegocio(e.target.value)}
+                    >
+                        <option value="Aluguel">Aluguel</option>
+                        <option value="Venda">Venda</option>
+                    </select>
                     <input
                         placeholder="Valor em reais"
                         value={value}

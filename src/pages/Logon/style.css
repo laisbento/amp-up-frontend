@@ -31,7 +31,8 @@
 
 .logon-container .form-container img {
     max-width: 550px;
-    margin-bottom: 150px;
+    height: auto;
+    margin-bottom: 300px;
 }
 
 .logon-container .form-container section.form form h1 {

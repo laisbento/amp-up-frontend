@@ -56,7 +56,7 @@ export default function Profile() {
                 </button>
             </header>
 
-            <h1>Anúncios Cadastrados</h1>
+            <h1>Imóveis Cadastrados</h1>
             <ul>
                 {ads.map(ad => (
                     <li key={ad.id}>

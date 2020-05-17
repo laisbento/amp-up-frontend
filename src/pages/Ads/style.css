@@ -10,7 +10,7 @@
     display: flex;
 }
 
-.ads-container .last-ads-container img{
+.ads-container .last-ads-container svg{
     margin-top: 50px;
     margin-left: 10px;
     max-width: 100%;
@@ -36,7 +36,7 @@
 }
 
 .ads-container header a {
-    width: 260px;
+    width: 200px;
     margin-left: auto;
     margin-top: 0;
 }

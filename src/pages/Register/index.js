@@ -46,11 +46,11 @@ export default function Register() {
 
                     <h1>Cadastro</h1>
 
-                    <p>Faça seu cadastro e aproveite a simplicidade de fazer um anúncio.</p>
+                    <p>Faça seu cadastro e aproveite a simplicidade de anunciar seu imóvel.</p>
 
-                    <Link className="back-link" to="/">
+                    <Link className="back-link" to="/logon">
                         <FiArrowLeft size={16} color="#E02041" />
-                        Voltar para o logon
+                        Voltar para o login
                     </Link>
                 </section>
 
