@@ -38,6 +38,9 @@ export default function Ads() {
                         <strong>DESCRIÇÃO:</strong>
                         <p>{ad.description}</p>
 
+                        <strong>TIPO:</strong>
+                        <p>{ad.tipoNegocio}</p>
+
                         <strong>VALOR:</strong>
                         <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(ad.value)}</p>
 
